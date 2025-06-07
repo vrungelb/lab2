@@ -22,7 +22,7 @@ typedef struct {
 } passenger_t;
 
 /*
- * Компаратор для qsort: сравнивает по полю ta (время прибытия).
+ * Компаратор для qsort: сравнивает по полю ta пассажиров по времени прибытия.
  */
 static int cmp_arr(const void* a, const void* b) {
     const passenger_t* pa = (const passenger_t*)a;
