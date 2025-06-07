@@ -10,6 +10,10 @@
 #define MAX_PASSENGERS 1000
 #define INF_TIME 1000000000
 
+
+
+// ----- Структуры и функции для симуляции ----- //
+
 // Структура для хранения данных одного пассажира
 typedef struct {
     char id[MAX_ID_LEN];
@@ -40,7 +44,8 @@ static int all_empty(queue_t** desks, int N) {
 
 
 
-
+// ----- Реализация очереди queue_t с использованием array_queue_t или list_queue_t ----- //
+// В зависимости от флага USE_ARRAY_QUEUE, будет использоваться либо массив, либо связный список.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -158,13 +163,9 @@ size_t queue_dump_ids(const queue_t* q, char out[][MAX_ID_LEN]) {
 #endif
 }
 
-// ... здесь вставляется run_simulation() как в оригинале ...
 
 
-
-
-
-
+ // ----- SIMULATION SIMULATION SIMULATION SIMULATION SIMULATION SIMULATION SIMULATION SIMULATION ----- //
 
 void run_simulation(void) {
     int N;
