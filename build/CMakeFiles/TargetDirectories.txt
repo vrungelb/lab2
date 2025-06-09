@@ -1,0 +1,3 @@
+/mnt/c/Users/Timur/Desktop/lab2/build/CMakeFiles/queue.dir
+/mnt/c/Users/Timur/Desktop/lab2/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Timur/Desktop/lab2/build/CMakeFiles/rebuild_cache.dir
