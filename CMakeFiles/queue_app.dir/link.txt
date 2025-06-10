@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/queue_app.dir/main.c.o -o queue_app  -Wl,-rpath,/mnt/c/Users/Timur/Desktop/lab2 libqueue.so 
