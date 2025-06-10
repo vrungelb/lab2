@@ -74,11 +74,11 @@ static void array_queue_destroy(array_queue_t* q) {
  */
 static int array_queue_enqueue(array_queue_t* q, const char* passenger_id, int service_time) {
     if (q->size == q->capacity) {
-        // основной буфер полон -> сохраняем в dropped
-        if (q->drop_size == q->drop_cap) {
-            size_t newcap = q->drop_cap * 2;
+        // основной буфер полон, поэтому сохраняем в dropped
+        if (q->drop_size == q->drop_cap) { // буфер отказанных полон
+            size_t newcap = q->drop_cap * 2; // задаём новую ёмкость, которая в 2 раза больше
             char** tmp = realloc(q->dropped, newcap * sizeof(char*));
-            if (!tmp) return -1;
+            if (!tmp) return -1; // 
             q->dropped = tmp;
             q->drop_cap = newcap;
         }
